@@ -1,0 +1,13 @@
+def EL_VERSION = '2.7.7'
+
+apply plugin: 'java-library'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testImplementation 'junit:junit:4.13.1'
+	testImplementation 'com.h2database:h2:1.4.200'
+	testImplementation "org.eclipse.persistence:eclipselink:$EL_VERSION"
+}
